@@ -96,8 +96,8 @@ const ShopAdd = ({ addshopuser,history }) => {
                 </div>
                 <div className="flex flex-col">
                   <label className="leading-loose">ที่อยู่ของร้านค้า</label>
-                  <input
-                    type="text"
+                  <textarea
+                    
                     className="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
                     placeholder=""
                     name="address"
