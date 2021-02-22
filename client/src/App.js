@@ -5,7 +5,7 @@ import Signin from "./Components/Auth/Signin";
 import Signup from "./Components/Auth/Signup";
 import Menus from "./Components/Menu/Menus";
 import UserRouter from "./Routing/UserRouter";
-import Products from "./Components/Products/Products";
+import Outproduct from "./Components/Products/Outproduct";
 import Shop from "./Components/Shop/Shop";
 import ShopAdd from "./Components/Shop/ShopAdd";
 
@@ -33,10 +33,10 @@ function App() {
     <Fragment>
       <Menus />
       <Switch>
-        <Route exact path="/" component={Signin} />
+        <Route exact path="/" component={Outproduct} />
         <Route exact path="/signin" component={Signin} />
         <Route exact path="/signup" component={Signup} />
-        <UserRouter path="/product" component={Products} />
+        {/* <UserRouter path="/product" component={Products} /> */}
         <UserRouter path="/myshop" component={Shop} />
         <UserRouter path="/addshop" component={ShopAdd}/>
       </Switch>

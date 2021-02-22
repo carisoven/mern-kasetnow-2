@@ -11,6 +11,11 @@ const Menus = ({ auth: { isAuthenticated ,user}, signout }) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
 
+  const logout = async (e) => {
+    e.preventDefault();
+    signout()
+    setProfileOpen(!profileOpen)
+  };
   return (
     <nav className="bg-blue-grey-900-contrast">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -128,7 +133,7 @@ const Menus = ({ auth: { isAuthenticated ,user}, signout }) => {
                       </Link>
 
                       <a
-                        onClick={signout}
+                        onClick={(e) => logout(e)}
                         
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                         role="menuitem"
@@ -263,8 +268,7 @@ const Menus = ({ auth: { isAuthenticated ,user}, signout }) => {
               </Link>
 
               <a
-                onClick={signout}
-                
+                onClick={(e) => logout(e)}                
                 className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700"
               >
                 Sign out

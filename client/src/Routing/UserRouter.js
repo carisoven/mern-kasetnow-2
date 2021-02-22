@@ -1,4 +1,4 @@
-import React from "react";
+import React,{Fragment} from "react";
 import { Route, Redirect } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
@@ -8,11 +8,15 @@ const UserRouter = ({ component: Component,auth:{isAuthenticated,admin,userrole,
     <Route
       {...rest}
       render={props =>
-        isAuthenticated && !loading ? (
+        loading ? (
+          <Fragment>
+            <h1>Loading</h1>
+          </Fragment>
+        ) : isAuthenticated ? (
           <Component {...props} />
-          ) : (
-            <Redirect to="/" />
-          )
+        ) : (
+          <Redirect to="/login" />
+        )
       }
     />
   );

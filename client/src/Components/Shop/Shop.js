@@ -61,7 +61,7 @@ const Shop = ({ loadShop, shop: { myshop } }) => {
                 Add Products
               </Link>
               <Link
-              to="/myshop"
+              to={`/myshop/${myshop._id}`}
                 className="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-bold text-xs py-3 mr-8"
               >
                 Products
@@ -79,8 +79,8 @@ const Shop = ({ loadShop, shop: { myshop } }) => {
             </div>
           </nav>
           <Switch>
-            <Route exact path="/myshop" component={Products}/>
-            <Route path="/myshop/addproduct" component={AddProduct}/>
+            <Route  path="/myshop/addproduct" component={AddProduct}/>
+            <Route  path="/myshop/:id" component={Products}/>
             {/* 
             <Route path="/myshop/myorder" component={Order}/> 
             <Route path="/myshop/myorder" component={Order}/>

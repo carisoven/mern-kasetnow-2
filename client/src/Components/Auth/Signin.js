@@ -21,7 +21,7 @@ const Signin = ({signin, isAuthenticated , userrole,admin}) => {
     signin(formData);
   };
   if(isAuthenticated){
-    return <Redirect to="/product"/>
+    return <Redirect to="/"/>
   }
 
   // if ( isAuthenticated  & admin) {

@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 // config tools
 const bcrypt = require("bcryptjs");
-const config = require("config");
+
 const jwt = require("jsonwebtoken");
 const gravatar = require("gravatar");
 const { check, validationResult } = require("express-validator");
@@ -69,7 +69,7 @@ router.post(
       };
       jwt.sign(
         payload,
-        config.get("jwtSecret"),
+        process.env.JWTSECRET,
         { expiresIn: 360000 },
         (err, token) => {
           if (err) throw err;
@@ -141,7 +141,7 @@ router.post(
       };
       jwt.sign(
         payload,
-        config.get("jwtSecret"),
+        process.env.JWTSECRET,
         { expiresIn: 360000 },
         (err, token) => {
           if (err) throw err;

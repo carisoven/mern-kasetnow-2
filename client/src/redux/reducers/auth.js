@@ -15,7 +15,7 @@ const initialState = {
     isAuthenticated: false,
     admin: false,
     userrole:false,
-    loading: false,
+    loading: true,
     user: null,
   };
 
