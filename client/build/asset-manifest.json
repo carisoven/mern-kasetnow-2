@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fb6b035f.chunk.css",
+    "main.js": "/static/js/main.ebf40ca1.chunk.js",
+    "main.js.map": "/static/js/main.ebf40ca1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f493586a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f493586a.js.map",
+    "static/js/2.4917d62e.chunk.js": "/static/js/2.4917d62e.chunk.js",
+    "static/js/2.4917d62e.chunk.js.map": "/static/js/2.4917d62e.chunk.js.map",
+    "static/js/3.146ef30d.chunk.js": "/static/js/3.146ef30d.chunk.js",
+    "static/js/3.146ef30d.chunk.js.map": "/static/js/3.146ef30d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.fb6b035f.chunk.css.map": "/static/css/main.fb6b035f.chunk.css.map",
+    "static/js/2.4917d62e.chunk.js.LICENSE.txt": "/static/js/2.4917d62e.chunk.js.LICENSE.txt",
+    "static/media/kasetnow1.b63482a0.jpg": "/static/media/kasetnow1.b63482a0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f493586a.js",
+    "static/js/2.4917d62e.chunk.js",
+    "static/css/main.fb6b035f.chunk.css",
+    "static/js/main.ebf40ca1.chunk.js"
+  ]
+}

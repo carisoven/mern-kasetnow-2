@@ -3,6 +3,8 @@ const connectDB = require("./config/db");
 const path = require("path");
 const morgan = require("morgan");
 const cors = require("cors");
+const dotenv = require("dotenv");
+dotenv.config({path:'./dev.env'})
 
 // * install Express
 const app = express();
