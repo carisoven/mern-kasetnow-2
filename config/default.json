@@ -1,8 +1,8 @@
 {
-    "mongoURI": "mongodb+srv://carisoven:hemarat1@first-one-project.ah5w8.mongodb.net/mern-kasetnow-2?retryWrites=true&w=majority",
-    "jwtSecret": "A8d0-df490fd-df734jfosdf9",
-    "accesskeyId":"AKIAJ33HK6KKQRVW3FKQ",
-    "secretAccessKey":"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",
-    "region":"ap-southeast-1",
-    "bucket":"mern-kasetnow"
+    "mongoURI": "",
+    "jwtSecret": "",
+    "accesskeyId":"",
+    "secretAccessKey":"",
+    "region":"",
+    "bucket":""
   }
